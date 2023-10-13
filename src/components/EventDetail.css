@@ -1,0 +1,26 @@
+.event-container {
+  margin-top: 10px;  
+  display: flex;
+    flex-direction: column; /* Stack elements vertically on small screens */
+    max-height: 100vh; /* Set a maximum height based on the viewport height */
+    overflow: auto; /* Enable scrolling when necessary */
+  }
+  
+  .event-details {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scrolling for this div */
+  }
+  
+  .map {
+    flex: 1; /* Increase the flex value to make the map larger */
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scrolling for this div */
+  }
+  
+  @media (min-width: 768px) {
+    .event-container {
+      flex-direction: row; /* Display elements side by side on screens wider than 768px */
+    }
+  }
+  
